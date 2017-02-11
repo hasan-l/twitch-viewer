@@ -1,0 +1,150 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{	
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #c3824a;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+	background-color: #dedede;
+	width: 501px;
+	min-height: 700px;
+	margin: 20px auto;
+}
+
+/*** btn ***/
+
+.btn, .btn:active{
+	border: 0;
+	outline: 0;
+	padding: 0;
+}
+
+.btn{
+	width: 167px;
+	height: 70px;
+	float: left;
+	background-color: #c14947;
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+}
+
+.btn:hover .triangle{
+	position: absolute;
+	bottom: -10px;
+	left: 75px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid #c14947;
+}
+
+/*added via jQuery*/
+.btn .triangle.changed{
+	position: absolute;
+	bottom: -10px;
+	left: 75px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid #844947;
+}
+
+/*added via jQuery*/
+.btn-bkgrnd-changed{
+	background-color: #844947;
+}
+
+/*** twitch logo***/
+
+.twitch-logo{
+	height: 70px;
+	padding: 20px;
+}
+
+.twitch-logo img{
+	width: 100px;
+	display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/*** streams ***/
+
+.stream-container{
+	margin-top: 120px;
+	font-size: 20px;
+	min-height: 500px;
+	padding-bottom: 20px;
+}
+
+.stream{
+	position: relative;
+}
+
+.stream img{
+	margin-top: 0px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.stream a{
+	display: block;
+ 	padding: 10px;
+ 	padding-left: 30px;
+ 	height: 120px;
+}
+
+.stream a:hover{
+	background-color: #c7c7c7;
+}
+
+.stream a:visited, .stream a:active, .stream a:visited, .stream a{
+	color: #000;
+	text-decoration: none;
+}
+
+.stream div.status{
+	position: absolute;
+    left: 120px;
+    top: 50%;
+    margin-top: -10px;
+    left: 440px;
+}
+
+.fa-times-circle{
+	color: #c14947;
+}
+
+.fa-check{
+	color: #8bba3e;
+}
+
+.channel-name{
+	position: absolute;
+	top: 40px;
+	left: 145px;
+}
+
+.desc{
+	position: absolute;
+	top: 60px;
+	width: 280px;
+	left: 145px;
+}
+
+.desc i{
+	font-size: 14px;
+}
