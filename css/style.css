@@ -16,8 +16,8 @@ body{
 .container{
 	background-color: #dedede;
 	width: 501px;
-	min-height: 700px;
-	margin: 20px auto;
+	
+	margin: 0px auto;
 }
 
 /*** btn ***/
@@ -38,7 +38,7 @@ body{
 	color: #fff;
 }
 
-.btn:hover .triangle{
+.btn:hover .notch{
 	position: absolute;
 	bottom: -10px;
 	left: 75px;
@@ -49,8 +49,8 @@ body{
   	border-top: 10px solid #c14947;
 }
 
-/*added via jQuery*/
-.btn .triangle.changed{
+/*added via jQuery on btn click*/
+.notch.changed{
 	position: absolute;
 	bottom: -10px;
 	left: 75px;
@@ -61,7 +61,11 @@ body{
   	border-top: 10px solid #844947;
 }
 
-/*added via jQuery*/
+.btn:hover .notch.changed{
+  	border-top: 10px solid #844947;
+}
+
+/*added via jQuery on btn click*/
 .btn-bkgrnd-changed{
 	background-color: #844947;
 }
@@ -116,12 +120,9 @@ body{
 	text-decoration: none;
 }
 
-.stream div.status{
-	position: absolute;
-    left: 120px;
-    top: 50%;
-    margin-top: -10px;
-    left: 440px;
+.status i{
+	float: right;
+	padding: 40px 20px 0 0;
 }
 
 .fa-times-circle{
@@ -147,4 +148,37 @@ body{
 
 .desc i{
 	font-size: 14px;
+}
+
+@media screen and (max-width: 501px) {
+
+	.container{
+		width: 100%;
+		margin: 0px auto;
+	}
+
+	.btn{
+		width: 33.3333333333%;
+	}
+	
+	.desc{
+		float: right;
+		width: 150px;
+		left: 125px;
+		font-size: 12px;
+	}
+
+	.status i{
+		padding: 30px 20px 0 0;
+	}
+
+	.stream a{
+	 	padding-left: 10px;
+	}
+
+	.channel-name{
+		font-size: 14px;
+		left: 125px;
+	}
+
 }
